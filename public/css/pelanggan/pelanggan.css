@@ -1056,11 +1056,34 @@ body {
     transition: all 0.3s;
     z-index: 9999;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
 }
 
 .toast-notification.show {
     transform: translateY(0);
     opacity: 1;
+}
+
+.toast-notification.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.toast-notification.warning {
+    background-color: #ff9800;
+    color: white;
+}
+
+.toast-notification.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.toast-notification i {
+    font-size: 1.2rem;
 }
 
 /* Custom Scrollbar */
